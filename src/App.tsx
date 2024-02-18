@@ -10,7 +10,7 @@ const Section =
     </section>
   )) satisfies Component<{ title: string; content: string; class?: string }>;
 const Document: Component<{ fields: string[] }> = (p) => (
-  <article class="flex flex-col gap-2 items-stretch">
+  <article class="flex flex-col gap-2 items-stretch scale-90">
     <Section title="Student Name" content={p.fields[0]} />
     <Section title="Class" content={p.fields[1]} />
     <Section title="Teacher" content="Yoon" />
