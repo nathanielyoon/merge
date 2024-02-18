@@ -10,7 +10,7 @@ const Section =
     </section>
   )) satisfies Component<{ title: string; content: string; class?: string }>;
 const Document: Component<{ fields: string[] }> = (p) => (
-  <article class="flex flex-col gap-2 items-stretch scale-90">
+  <article class="flex flex-col gap-2 items-stretch scale-75">
     <Section title="Student Name" content={p.fields[0]} />
     <Section title="Class" content={p.fields[1]} />
     <Section title="Teacher" content="Yoon" />
@@ -32,7 +32,7 @@ const Document: Component<{ fields: string[] }> = (p) => (
     />
     <section class="flex flex-col gap-2 mt-4">
       <p>For TLC Staff:</p>
-      <p>Time started ___________ Time finished ___________</p>
+      <p>Time started ______ Time finished ______</p>
     </section>
   </article>
 );
